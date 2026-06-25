@@ -1,5 +1,15 @@
 # `@react-router/dev`
 
+## v8.1.0
+
+### Patch Changes
+
+- Fix a regression with the new prerendering plugin where the `react-router.config.ts` `buildEnd` hook would run before prerendering was completed ([#15211](https://github.com/remix-run/react-router/pull/15211))
+- Updated dependencies:
+  - [`react-router@8.1.0`](https://github.com/remix-run/react-router/releases/tag/react-router@8.1.0)
+  - [`@react-router/node@8.1.0`](https://github.com/remix-run/react-router/releases/tag/@react-router/node@8.1.0)
+  - [`@react-router/serve@8.1.0`](https://github.com/remix-run/react-router/releases/tag/@react-router/serve@8.1.0)
+
 ## v8.0.1
 
 ### Patch Changes

@@ -16,6 +16,7 @@ We manage release notes in this file instead of the paginated Github Releases Pa
   <summary>Table of Contents</summary>
 
 - [React Router Releases](#react-router-releases)
+  - [v8.1.0](#v810)
   - [v8.0.1](#v801)
   - [v8.0.0](#v800)
     - [Baseline Support](#baseline-support)
@@ -103,6 +104,24 @@ We manage release notes in this file instead of the paginated Github Releases Pa
   - [v7.0.0](#v700)
 
 </details>
+
+## v8.1.0
+
+Date: 2026-06-25
+
+### Minor Changes
+
+- `create-react-router` - Add a default-on CLI option to include the official React Router agent skill in generated projects. ([#15213](https://github.com/remix-run/react-router/pull/15213))
+  - New projects include `.agents/skills/react-router` by default when running with `--yes` or in non-interactive shells.
+  - Interactive runs prompt to include the skill, defaulting to yes.
+  - Use `--no-agent-skills` to skip copying the skill.
+
+### Patch Changes
+
+- `@react-router/dev` - Fix a regression with the new prerendering plugin where the `react-router.config.ts` `buildEnd` hook would run before prerendering was completed ([#15211](https://github.com/remix-run/react-router/pull/15211))
+- `create-react-router` - Use Node's built-in `parseArgs` utility for CLI argument parsing and remove the `arg` dependency. ([#15231](https://github.com/remix-run/react-router/pull/15231))
+
+**Full Changelog**: [`v8.0.1...v8.1.0`](https://github.com/remix-run/react-router/compare/react-router@8.0.1...react-router@8.1.0)
 
 ## v8.0.1
 
